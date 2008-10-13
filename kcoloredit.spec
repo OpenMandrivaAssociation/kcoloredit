@@ -1,4 +1,4 @@
-%define version 1.9.0
+%define version 2.0.0
 %define release %mkrel 1
 %define oname   kcoloredit
 
@@ -8,7 +8,7 @@ Release:	%{release}
 License:	GPLv2+
 Url:		http://www.kde.org/
 Group:		Graphical desktop/KDE
-Source0:	%{oname}-%version-kde4.1.0.tar.bz2
+Source0:	%{oname}-%version-kde4.1.2.tar.bz2
 Summary:        Palette files editor
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  cmake >= 2.4.5
@@ -43,7 +43,7 @@ choosing and naming.
 #------------------------------------------------
 
 %prep
-%setup -q -n %name-%version-kde4.1.0
+%setup -q -n %name-%version-kde4.1.2
 
 %build
 %cmake_kde4 
