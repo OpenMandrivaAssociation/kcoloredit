@@ -1,5 +1,5 @@
 %define version 2.0.0
-%define release %mkrel 1
+%define release %mkrel 2
 %define oname   kcoloredit
 
 Name:		kcoloredit
@@ -15,7 +15,7 @@ BuildRequires:  cmake >= 2.4.5
 BuildRequires:  kdelibs4-devel
 Obsoletes:	kde4-%name < 4.0.3
 Conflicts:	kde-l10n < 3.5.9-5
-Conflicts:	kdegraphics-kcoloredit < 1:3.5.9-8
+Obsoletes:	kdegraphics-kcoloredit < 1:3.5.10-3
 
 %description
 KColorEdit is a palette files editor. 
