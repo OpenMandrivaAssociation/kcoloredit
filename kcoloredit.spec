@@ -1,5 +1,5 @@
 %define version 2.0.0
-%define release %mkrel 2
+%define release %mkrel 3
 %define oname   kcoloredit
 
 Name:		kcoloredit
@@ -8,7 +8,7 @@ Release:	%{release}
 License:	GPLv2+
 Url:		http://www.kde.org/
 Group:		Graphical desktop/KDE
-Source0:	%{oname}-%version-kde4.1.2.tar.bz2
+Source0:	%{oname}-%version-kde4.3.1.tar.bz2
 Summary:        Palette files editor
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  cmake >= 2.4.5
@@ -22,16 +22,6 @@ KColorEdit is a palette files editor.
 It can be used for editing color palettes and for color 
 choosing and naming.
 
-%if %mdkversion < 200900
-%post
-%{update_desktop_database}
-%update_icon_cache hicolor
-
-%postun
-%{clean_desktop_database}
-%clean_icon_cache hicolor
-%endif
-
 %files -f %name.lang
 %defattr(-,root,root)
 %doc README AUTHORS
@@ -43,7 +33,7 @@ choosing and naming.
 #------------------------------------------------
 
 %prep
-%setup -q -n %name-%version-kde4.1.2
+%setup -q -n %name-%version-kde4.3.1
 
 %build
 %cmake_kde4 
