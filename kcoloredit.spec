@@ -1,5 +1,5 @@
 %define version 2.0.0
-%define release %mkrel 4
+%define release %mkrel 5
 %define oname   kcoloredit
 
 Name:		kcoloredit
