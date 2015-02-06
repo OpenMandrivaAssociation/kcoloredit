@@ -1,7 +1,7 @@
 Summary:	Palette files editor
 Name:		kcoloredit
 Version:	2.0.0
-Release:	6
+Release:	7
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/
