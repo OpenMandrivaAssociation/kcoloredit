@@ -4,7 +4,7 @@ Version:	2.0.0
 Release:	7
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org/
+Url:		https://www.kde.org/
 Source0:	%{name}-%{version}-kde4.4.0.tar.bz2
 Patch0:		kcoloredit-2.0.0-linkage.patch
 BuildRequires:	cmake
